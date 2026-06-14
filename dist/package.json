@@ -36,7 +36,7 @@
     "effect": "4.0.0-beta.83",
     "electric-sql": "^0.12.1",
     "expo": "^56.0.8",
-    "expo-sqlite": "^55.0.15",
+    "expo-sqlite": "^56.0.0",
     "partykit": "^0.0.115",
     "partysocket": "^1.1.19",
     "postgres": "^3.4.9",
@@ -140,694 +140,6 @@
   },
   "main": "./index.js",
   "types": "./@types/index.d.ts",
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./@types/index.d.ts"
-      ],
-      "with-schemas": [
-        "./@types/with-schemas/index.d.ts"
-      ],
-      "omni": [
-        "./@types/omni/index.d.ts"
-      ],
-      "omni/with-schemas": [
-        "./@types/omni/with-schemas/index.d.ts"
-      ],
-      "checkpoints": [
-        "./@types/checkpoints/index.d.ts"
-      ],
-      "checkpoints/with-schemas": [
-        "./@types/checkpoints/with-schemas/index.d.ts"
-      ],
-      "common": [
-        "./@types/common/index.d.ts"
-      ],
-      "common/with-schemas": [
-        "./@types/common/with-schemas/index.d.ts"
-      ],
-      "indexes": [
-        "./@types/indexes/index.d.ts"
-      ],
-      "indexes/with-schemas": [
-        "./@types/indexes/with-schemas/index.d.ts"
-      ],
-      "mergeable-store": [
-        "./@types/mergeable-store/index.d.ts"
-      ],
-      "mergeable-store/with-schemas": [
-        "./@types/mergeable-store/with-schemas/index.d.ts"
-      ],
-      "metrics": [
-        "./@types/metrics/index.d.ts"
-      ],
-      "metrics/with-schemas": [
-        "./@types/metrics/with-schemas/index.d.ts"
-      ],
-      "middleware": [
-        "./@types/middleware/index.d.ts"
-      ],
-      "middleware/with-schemas": [
-        "./@types/middleware/with-schemas/index.d.ts"
-      ],
-      "persisters": [
-        "./@types/persisters/index.d.ts"
-      ],
-      "persisters/with-schemas": [
-        "./@types/persisters/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-automerge": [
-        "./@types/persisters/persister-automerge/index.d.ts"
-      ],
-      "persisters/persister-automerge/with-schemas": [
-        "./@types/persisters/persister-automerge/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-browser": [
-        "./@types/persisters/persister-browser/index.d.ts"
-      ],
-      "persisters/persister-browser/with-schemas": [
-        "./@types/persisters/persister-browser/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-cr-sqlite-wasm": [
-        "./@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
-      ],
-      "persisters/persister-cr-sqlite-wasm/with-schemas": [
-        "./@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-durable-object-storage": [
-        "./@types/persisters/persister-durable-object-storage/index.d.ts"
-      ],
-      "persisters/persister-durable-object-storage/with-schemas": [
-        "./@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-durable-object-sql-storage": [
-        "./@types/persisters/persister-durable-object-sql-storage/index.d.ts"
-      ],
-      "persisters/persister-durable-object-sql-storage/with-schemas": [
-        "./@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-electric-sql": [
-        "./@types/persisters/persister-electric-sql/index.d.ts"
-      ],
-      "persisters/persister-electric-sql/with-schemas": [
-        "./@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-expo-sqlite": [
-        "./@types/persisters/persister-expo-sqlite/index.d.ts"
-      ],
-      "persisters/persister-expo-sqlite/with-schemas": [
-        "./@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-file": [
-        "./@types/persisters/persister-file/index.d.ts"
-      ],
-      "persisters/persister-file/with-schemas": [
-        "./@types/persisters/persister-file/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-indexed-db": [
-        "./@types/persisters/persister-indexed-db/index.d.ts"
-      ],
-      "persisters/persister-indexed-db/with-schemas": [
-        "./@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-libsql": [
-        "./@types/persisters/persister-libsql/index.d.ts"
-      ],
-      "persisters/persister-libsql/with-schemas": [
-        "./@types/persisters/persister-libsql/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-partykit-client": [
-        "./@types/persisters/persister-partykit-client/index.d.ts"
-      ],
-      "persisters/persister-partykit-client/with-schemas": [
-        "./@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-partykit-server": [
-        "./@types/persisters/persister-partykit-server/index.d.ts"
-      ],
-      "persisters/persister-partykit-server/with-schemas": [
-        "./@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-pglite": [
-        "./@types/persisters/persister-pglite/index.d.ts"
-      ],
-      "persisters/persister-pglite/with-schemas": [
-        "./@types/persisters/persister-pglite/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-postgres": [
-        "./@types/persisters/persister-postgres/index.d.ts"
-      ],
-      "persisters/persister-postgres/with-schemas": [
-        "./@types/persisters/persister-postgres/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-powersync": [
-        "./@types/persisters/persister-powersync/index.d.ts"
-      ],
-      "persisters/persister-powersync/with-schemas": [
-        "./@types/persisters/persister-powersync/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-react-native-mmkv": [
-        "./@types/persisters/persister-react-native-mmkv/index.d.ts"
-      ],
-      "persisters/persister-react-native-mmkv/with-schemas": [
-        "./@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-react-native-sqlite": [
-        "./@types/persisters/persister-react-native-sqlite/index.d.ts"
-      ],
-      "persisters/persister-react-native-sqlite/with-schemas": [
-        "./@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-remote": [
-        "./@types/persisters/persister-remote/index.d.ts"
-      ],
-      "persisters/persister-remote/with-schemas": [
-        "./@types/persisters/persister-remote/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-sqlite-bun": [
-        "./@types/persisters/persister-sqlite-bun/index.d.ts"
-      ],
-      "persisters/persister-sqlite-bun/with-schemas": [
-        "./@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-sqlite-wasm": [
-        "./@types/persisters/persister-sqlite-wasm/index.d.ts"
-      ],
-      "persisters/persister-sqlite-wasm/with-schemas": [
-        "./@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-sqlite3": [
-        "./@types/persisters/persister-sqlite3/index.d.ts"
-      ],
-      "persisters/persister-sqlite3/with-schemas": [
-        "./@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
-      ],
-      "persisters/persister-yjs": [
-        "./@types/persisters/persister-yjs/index.d.ts"
-      ],
-      "persisters/persister-yjs/with-schemas": [
-        "./@types/persisters/persister-yjs/with-schemas/index.d.ts"
-      ],
-      "queries": [
-        "./@types/queries/index.d.ts"
-      ],
-      "queries/with-schemas": [
-        "./@types/queries/with-schemas/index.d.ts"
-      ],
-      "relationships": [
-        "./@types/relationships/index.d.ts"
-      ],
-      "relationships/with-schemas": [
-        "./@types/relationships/with-schemas/index.d.ts"
-      ],
-      "schematizers": [
-        "./@types/schematizers/index.d.ts"
-      ],
-      "schematizers/with-schemas": [
-        "./@types/schematizers/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-arktype": [
-        "./@types/schematizers/schematizer-arktype/index.d.ts"
-      ],
-      "schematizers/schematizer-arktype/with-schemas": [
-        "./@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-effect": [
-        "./@types/schematizers/schematizer-effect/index.d.ts"
-      ],
-      "schematizers/schematizer-effect/with-schemas": [
-        "./@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-typebox": [
-        "./@types/schematizers/schematizer-typebox/index.d.ts"
-      ],
-      "schematizers/schematizer-typebox/with-schemas": [
-        "./@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-valibot": [
-        "./@types/schematizers/schematizer-valibot/index.d.ts"
-      ],
-      "schematizers/schematizer-valibot/with-schemas": [
-        "./@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-yup": [
-        "./@types/schematizers/schematizer-yup/index.d.ts"
-      ],
-      "schematizers/schematizer-yup/with-schemas": [
-        "./@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
-      ],
-      "schematizers/schematizer-zod": [
-        "./@types/schematizers/schematizer-zod/index.d.ts"
-      ],
-      "schematizers/schematizer-zod/with-schemas": [
-        "./@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
-      ],
-      "store": [
-        "./@types/store/index.d.ts"
-      ],
-      "store/with-schemas": [
-        "./@types/store/with-schemas/index.d.ts"
-      ],
-      "synchronizers": [
-        "./@types/synchronizers/index.d.ts"
-      ],
-      "synchronizers/with-schemas": [
-        "./@types/synchronizers/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-broadcast-channel": [
-        "./@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
-      ],
-      "synchronizers/synchronizer-broadcast-channel/with-schemas": [
-        "./@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-local": [
-        "./@types/synchronizers/synchronizer-local/index.d.ts"
-      ],
-      "synchronizers/synchronizer-local/with-schemas": [
-        "./@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-client": [
-        "./@types/synchronizers/synchronizer-ws-client/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-client/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server-durable-object": [
-        "./@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server-simple": [
-        "./@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server-simple/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server": [
-        "./@types/synchronizers/synchronizer-ws-server/index.d.ts"
-      ],
-      "synchronizers/synchronizer-ws-server/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
-      ],
-      "ui-react-dom": [
-        "./@types/ui-react-dom/index.d.ts"
-      ],
-      "ui-react-dom/with-schemas": [
-        "./@types/ui-react-dom/with-schemas/index.d.ts"
-      ],
-      "ui-react-inspector": [
-        "./@types/ui-react-inspector/index.d.ts"
-      ],
-      "ui-react-inspector/with-schemas": [
-        "./@types/ui-react-inspector/with-schemas/index.d.ts"
-      ],
-      "ui-react": [
-        "./@types/ui-react/index.d.ts"
-      ],
-      "ui-react/with-schemas": [
-        "./@types/ui-react/with-schemas/index.d.ts"
-      ],
-      "ui-solid-dom": [
-        "./@types/ui-solid-dom/index.d.ts"
-      ],
-      "ui-solid-dom/with-schemas": [
-        "./@types/ui-solid-dom/with-schemas/index.d.ts"
-      ],
-      "ui-solid-inspector": [
-        "./@types/ui-solid-inspector/index.d.ts"
-      ],
-      "ui-solid-inspector/with-schemas": [
-        "./@types/ui-solid-inspector/with-schemas/index.d.ts"
-      ],
-      "ui-solid": [
-        "./@types/ui-solid/index.d.ts"
-      ],
-      "ui-solid/with-schemas": [
-        "./@types/ui-solid/with-schemas/index.d.ts"
-      ],
-      "ui-svelte-dom": [
-        "./@types/ui-svelte-dom/index.d.ts"
-      ],
-      "ui-svelte-dom/with-schemas": [
-        "./@types/ui-svelte-dom/with-schemas/index.d.ts"
-      ],
-      "ui-svelte-inspector": [
-        "./@types/ui-svelte-inspector/index.d.ts"
-      ],
-      "ui-svelte-inspector/with-schemas": [
-        "./@types/ui-svelte-inspector/with-schemas/index.d.ts"
-      ],
-      "ui-svelte": [
-        "./@types/ui-svelte/index.d.ts"
-      ],
-      "ui-svelte/with-schemas": [
-        "./@types/ui-svelte/with-schemas/index.d.ts"
-      ],
-      "min": [
-        "./@types/index.d.ts"
-      ],
-      "min/with-schemas": [
-        "./@types/with-schemas/index.d.ts"
-      ],
-      "min/omni": [
-        "./@types/omni/index.d.ts"
-      ],
-      "min/omni/with-schemas": [
-        "./@types/omni/with-schemas/index.d.ts"
-      ],
-      "min/checkpoints": [
-        "./@types/checkpoints/index.d.ts"
-      ],
-      "min/checkpoints/with-schemas": [
-        "./@types/checkpoints/with-schemas/index.d.ts"
-      ],
-      "min/common": [
-        "./@types/common/index.d.ts"
-      ],
-      "min/common/with-schemas": [
-        "./@types/common/with-schemas/index.d.ts"
-      ],
-      "min/indexes": [
-        "./@types/indexes/index.d.ts"
-      ],
-      "min/indexes/with-schemas": [
-        "./@types/indexes/with-schemas/index.d.ts"
-      ],
-      "min/mergeable-store": [
-        "./@types/mergeable-store/index.d.ts"
-      ],
-      "min/mergeable-store/with-schemas": [
-        "./@types/mergeable-store/with-schemas/index.d.ts"
-      ],
-      "min/metrics": [
-        "./@types/metrics/index.d.ts"
-      ],
-      "min/metrics/with-schemas": [
-        "./@types/metrics/with-schemas/index.d.ts"
-      ],
-      "min/middleware": [
-        "./@types/middleware/index.d.ts"
-      ],
-      "min/middleware/with-schemas": [
-        "./@types/middleware/with-schemas/index.d.ts"
-      ],
-      "min/persisters": [
-        "./@types/persisters/index.d.ts"
-      ],
-      "min/persisters/with-schemas": [
-        "./@types/persisters/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-automerge": [
-        "./@types/persisters/persister-automerge/index.d.ts"
-      ],
-      "min/persisters/persister-automerge/with-schemas": [
-        "./@types/persisters/persister-automerge/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-browser": [
-        "./@types/persisters/persister-browser/index.d.ts"
-      ],
-      "min/persisters/persister-browser/with-schemas": [
-        "./@types/persisters/persister-browser/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-cr-sqlite-wasm": [
-        "./@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
-      ],
-      "min/persisters/persister-cr-sqlite-wasm/with-schemas": [
-        "./@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-durable-object-storage": [
-        "./@types/persisters/persister-durable-object-storage/index.d.ts"
-      ],
-      "min/persisters/persister-durable-object-storage/with-schemas": [
-        "./@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-durable-object-sql-storage": [
-        "./@types/persisters/persister-durable-object-sql-storage/index.d.ts"
-      ],
-      "min/persisters/persister-durable-object-sql-storage/with-schemas": [
-        "./@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-electric-sql": [
-        "./@types/persisters/persister-electric-sql/index.d.ts"
-      ],
-      "min/persisters/persister-electric-sql/with-schemas": [
-        "./@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-expo-sqlite": [
-        "./@types/persisters/persister-expo-sqlite/index.d.ts"
-      ],
-      "min/persisters/persister-expo-sqlite/with-schemas": [
-        "./@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-file": [
-        "./@types/persisters/persister-file/index.d.ts"
-      ],
-      "min/persisters/persister-file/with-schemas": [
-        "./@types/persisters/persister-file/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-indexed-db": [
-        "./@types/persisters/persister-indexed-db/index.d.ts"
-      ],
-      "min/persisters/persister-indexed-db/with-schemas": [
-        "./@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-libsql": [
-        "./@types/persisters/persister-libsql/index.d.ts"
-      ],
-      "min/persisters/persister-libsql/with-schemas": [
-        "./@types/persisters/persister-libsql/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-partykit-client": [
-        "./@types/persisters/persister-partykit-client/index.d.ts"
-      ],
-      "min/persisters/persister-partykit-client/with-schemas": [
-        "./@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-partykit-server": [
-        "./@types/persisters/persister-partykit-server/index.d.ts"
-      ],
-      "min/persisters/persister-partykit-server/with-schemas": [
-        "./@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-pglite": [
-        "./@types/persisters/persister-pglite/index.d.ts"
-      ],
-      "min/persisters/persister-pglite/with-schemas": [
-        "./@types/persisters/persister-pglite/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-postgres": [
-        "./@types/persisters/persister-postgres/index.d.ts"
-      ],
-      "min/persisters/persister-postgres/with-schemas": [
-        "./@types/persisters/persister-postgres/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-powersync": [
-        "./@types/persisters/persister-powersync/index.d.ts"
-      ],
-      "min/persisters/persister-powersync/with-schemas": [
-        "./@types/persisters/persister-powersync/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-react-native-mmkv": [
-        "./@types/persisters/persister-react-native-mmkv/index.d.ts"
-      ],
-      "min/persisters/persister-react-native-mmkv/with-schemas": [
-        "./@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-react-native-sqlite": [
-        "./@types/persisters/persister-react-native-sqlite/index.d.ts"
-      ],
-      "min/persisters/persister-react-native-sqlite/with-schemas": [
-        "./@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-remote": [
-        "./@types/persisters/persister-remote/index.d.ts"
-      ],
-      "min/persisters/persister-remote/with-schemas": [
-        "./@types/persisters/persister-remote/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite-bun": [
-        "./@types/persisters/persister-sqlite-bun/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite-bun/with-schemas": [
-        "./@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite-wasm": [
-        "./@types/persisters/persister-sqlite-wasm/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite-wasm/with-schemas": [
-        "./@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite3": [
-        "./@types/persisters/persister-sqlite3/index.d.ts"
-      ],
-      "min/persisters/persister-sqlite3/with-schemas": [
-        "./@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
-      ],
-      "min/persisters/persister-yjs": [
-        "./@types/persisters/persister-yjs/index.d.ts"
-      ],
-      "min/persisters/persister-yjs/with-schemas": [
-        "./@types/persisters/persister-yjs/with-schemas/index.d.ts"
-      ],
-      "min/queries": [
-        "./@types/queries/index.d.ts"
-      ],
-      "min/queries/with-schemas": [
-        "./@types/queries/with-schemas/index.d.ts"
-      ],
-      "min/relationships": [
-        "./@types/relationships/index.d.ts"
-      ],
-      "min/relationships/with-schemas": [
-        "./@types/relationships/with-schemas/index.d.ts"
-      ],
-      "min/schematizers": [
-        "./@types/schematizers/index.d.ts"
-      ],
-      "min/schematizers/with-schemas": [
-        "./@types/schematizers/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-arktype": [
-        "./@types/schematizers/schematizer-arktype/index.d.ts"
-      ],
-      "min/schematizers/schematizer-arktype/with-schemas": [
-        "./@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-effect": [
-        "./@types/schematizers/schematizer-effect/index.d.ts"
-      ],
-      "min/schematizers/schematizer-effect/with-schemas": [
-        "./@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-typebox": [
-        "./@types/schematizers/schematizer-typebox/index.d.ts"
-      ],
-      "min/schematizers/schematizer-typebox/with-schemas": [
-        "./@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-valibot": [
-        "./@types/schematizers/schematizer-valibot/index.d.ts"
-      ],
-      "min/schematizers/schematizer-valibot/with-schemas": [
-        "./@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-yup": [
-        "./@types/schematizers/schematizer-yup/index.d.ts"
-      ],
-      "min/schematizers/schematizer-yup/with-schemas": [
-        "./@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
-      ],
-      "min/schematizers/schematizer-zod": [
-        "./@types/schematizers/schematizer-zod/index.d.ts"
-      ],
-      "min/schematizers/schematizer-zod/with-schemas": [
-        "./@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
-      ],
-      "min/store": [
-        "./@types/store/index.d.ts"
-      ],
-      "min/store/with-schemas": [
-        "./@types/store/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers": [
-        "./@types/synchronizers/index.d.ts"
-      ],
-      "min/synchronizers/with-schemas": [
-        "./@types/synchronizers/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-broadcast-channel": [
-        "./@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-broadcast-channel/with-schemas": [
-        "./@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-local": [
-        "./@types/synchronizers/synchronizer-local/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-local/with-schemas": [
-        "./@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-client": [
-        "./@types/synchronizers/synchronizer-ws-client/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-client/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server-durable-object": [
-        "./@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server-simple": [
-        "./@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server-simple/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server": [
-        "./@types/synchronizers/synchronizer-ws-server/index.d.ts"
-      ],
-      "min/synchronizers/synchronizer-ws-server/with-schemas": [
-        "./@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
-      ],
-      "min/ui-react-dom": [
-        "./@types/ui-react-dom/index.d.ts"
-      ],
-      "min/ui-react-dom/with-schemas": [
-        "./@types/ui-react-dom/with-schemas/index.d.ts"
-      ],
-      "min/ui-react-inspector": [
-        "./@types/ui-react-inspector/index.d.ts"
-      ],
-      "min/ui-react-inspector/with-schemas": [
-        "./@types/ui-react-inspector/with-schemas/index.d.ts"
-      ],
-      "min/ui-react": [
-        "./@types/ui-react/index.d.ts"
-      ],
-      "min/ui-react/with-schemas": [
-        "./@types/ui-react/with-schemas/index.d.ts"
-      ],
-      "min/ui-solid-dom": [
-        "./@types/ui-solid-dom/index.d.ts"
-      ],
-      "min/ui-solid-dom/with-schemas": [
-        "./@types/ui-solid-dom/with-schemas/index.d.ts"
-      ],
-      "min/ui-solid-inspector": [
-        "./@types/ui-solid-inspector/index.d.ts"
-      ],
-      "min/ui-solid-inspector/with-schemas": [
-        "./@types/ui-solid-inspector/with-schemas/index.d.ts"
-      ],
-      "min/ui-solid": [
-        "./@types/ui-solid/index.d.ts"
-      ],
-      "min/ui-solid/with-schemas": [
-        "./@types/ui-solid/with-schemas/index.d.ts"
-      ],
-      "min/ui-svelte-dom": [
-        "./@types/ui-svelte-dom/index.d.ts"
-      ],
-      "min/ui-svelte-dom/with-schemas": [
-        "./@types/ui-svelte-dom/with-schemas/index.d.ts"
-      ],
-      "min/ui-svelte-inspector": [
-        "./@types/ui-svelte-inspector/index.d.ts"
-      ],
-      "min/ui-svelte-inspector/with-schemas": [
-        "./@types/ui-svelte-inspector/with-schemas/index.d.ts"
-      ],
-      "min/ui-svelte": [
-        "./@types/ui-svelte/index.d.ts"
-      ],
-      "min/ui-svelte/with-schemas": [
-        "./@types/ui-svelte/with-schemas/index.d.ts"
-      ]
-    }
-  },
   "exports": {
     ".": {
       "default": {
@@ -2197,5 +1509,696 @@
         "default": "./min/ui-svelte/index.js"
       }
     }
-  }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./@types/index.d.ts"
+      ],
+      "with-schemas": [
+        "./@types/with-schemas/index.d.ts"
+      ],
+      "omni": [
+        "./@types/omni/index.d.ts"
+      ],
+      "omni/with-schemas": [
+        "./@types/omni/with-schemas/index.d.ts"
+      ],
+      "checkpoints": [
+        "./@types/checkpoints/index.d.ts"
+      ],
+      "checkpoints/with-schemas": [
+        "./@types/checkpoints/with-schemas/index.d.ts"
+      ],
+      "common": [
+        "./@types/common/index.d.ts"
+      ],
+      "common/with-schemas": [
+        "./@types/common/with-schemas/index.d.ts"
+      ],
+      "indexes": [
+        "./@types/indexes/index.d.ts"
+      ],
+      "indexes/with-schemas": [
+        "./@types/indexes/with-schemas/index.d.ts"
+      ],
+      "mergeable-store": [
+        "./@types/mergeable-store/index.d.ts"
+      ],
+      "mergeable-store/with-schemas": [
+        "./@types/mergeable-store/with-schemas/index.d.ts"
+      ],
+      "metrics": [
+        "./@types/metrics/index.d.ts"
+      ],
+      "metrics/with-schemas": [
+        "./@types/metrics/with-schemas/index.d.ts"
+      ],
+      "middleware": [
+        "./@types/middleware/index.d.ts"
+      ],
+      "middleware/with-schemas": [
+        "./@types/middleware/with-schemas/index.d.ts"
+      ],
+      "persisters": [
+        "./@types/persisters/index.d.ts"
+      ],
+      "persisters/with-schemas": [
+        "./@types/persisters/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-automerge": [
+        "./@types/persisters/persister-automerge/index.d.ts"
+      ],
+      "persisters/persister-automerge/with-schemas": [
+        "./@types/persisters/persister-automerge/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-browser": [
+        "./@types/persisters/persister-browser/index.d.ts"
+      ],
+      "persisters/persister-browser/with-schemas": [
+        "./@types/persisters/persister-browser/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-cr-sqlite-wasm": [
+        "./@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
+      ],
+      "persisters/persister-cr-sqlite-wasm/with-schemas": [
+        "./@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-durable-object-storage": [
+        "./@types/persisters/persister-durable-object-storage/index.d.ts"
+      ],
+      "persisters/persister-durable-object-storage/with-schemas": [
+        "./@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-durable-object-sql-storage": [
+        "./@types/persisters/persister-durable-object-sql-storage/index.d.ts"
+      ],
+      "persisters/persister-durable-object-sql-storage/with-schemas": [
+        "./@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-electric-sql": [
+        "./@types/persisters/persister-electric-sql/index.d.ts"
+      ],
+      "persisters/persister-electric-sql/with-schemas": [
+        "./@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-expo-sqlite": [
+        "./@types/persisters/persister-expo-sqlite/index.d.ts"
+      ],
+      "persisters/persister-expo-sqlite/with-schemas": [
+        "./@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-file": [
+        "./@types/persisters/persister-file/index.d.ts"
+      ],
+      "persisters/persister-file/with-schemas": [
+        "./@types/persisters/persister-file/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-indexed-db": [
+        "./@types/persisters/persister-indexed-db/index.d.ts"
+      ],
+      "persisters/persister-indexed-db/with-schemas": [
+        "./@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-libsql": [
+        "./@types/persisters/persister-libsql/index.d.ts"
+      ],
+      "persisters/persister-libsql/with-schemas": [
+        "./@types/persisters/persister-libsql/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-partykit-client": [
+        "./@types/persisters/persister-partykit-client/index.d.ts"
+      ],
+      "persisters/persister-partykit-client/with-schemas": [
+        "./@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-partykit-server": [
+        "./@types/persisters/persister-partykit-server/index.d.ts"
+      ],
+      "persisters/persister-partykit-server/with-schemas": [
+        "./@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-pglite": [
+        "./@types/persisters/persister-pglite/index.d.ts"
+      ],
+      "persisters/persister-pglite/with-schemas": [
+        "./@types/persisters/persister-pglite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-postgres": [
+        "./@types/persisters/persister-postgres/index.d.ts"
+      ],
+      "persisters/persister-postgres/with-schemas": [
+        "./@types/persisters/persister-postgres/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-powersync": [
+        "./@types/persisters/persister-powersync/index.d.ts"
+      ],
+      "persisters/persister-powersync/with-schemas": [
+        "./@types/persisters/persister-powersync/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-react-native-mmkv": [
+        "./@types/persisters/persister-react-native-mmkv/index.d.ts"
+      ],
+      "persisters/persister-react-native-mmkv/with-schemas": [
+        "./@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-react-native-sqlite": [
+        "./@types/persisters/persister-react-native-sqlite/index.d.ts"
+      ],
+      "persisters/persister-react-native-sqlite/with-schemas": [
+        "./@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-remote": [
+        "./@types/persisters/persister-remote/index.d.ts"
+      ],
+      "persisters/persister-remote/with-schemas": [
+        "./@types/persisters/persister-remote/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite-bun": [
+        "./@types/persisters/persister-sqlite-bun/index.d.ts"
+      ],
+      "persisters/persister-sqlite-bun/with-schemas": [
+        "./@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite-wasm": [
+        "./@types/persisters/persister-sqlite-wasm/index.d.ts"
+      ],
+      "persisters/persister-sqlite-wasm/with-schemas": [
+        "./@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite3": [
+        "./@types/persisters/persister-sqlite3/index.d.ts"
+      ],
+      "persisters/persister-sqlite3/with-schemas": [
+        "./@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-yjs": [
+        "./@types/persisters/persister-yjs/index.d.ts"
+      ],
+      "persisters/persister-yjs/with-schemas": [
+        "./@types/persisters/persister-yjs/with-schemas/index.d.ts"
+      ],
+      "queries": [
+        "./@types/queries/index.d.ts"
+      ],
+      "queries/with-schemas": [
+        "./@types/queries/with-schemas/index.d.ts"
+      ],
+      "relationships": [
+        "./@types/relationships/index.d.ts"
+      ],
+      "relationships/with-schemas": [
+        "./@types/relationships/with-schemas/index.d.ts"
+      ],
+      "schematizers": [
+        "./@types/schematizers/index.d.ts"
+      ],
+      "schematizers/with-schemas": [
+        "./@types/schematizers/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-arktype": [
+        "./@types/schematizers/schematizer-arktype/index.d.ts"
+      ],
+      "schematizers/schematizer-arktype/with-schemas": [
+        "./@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-effect": [
+        "./@types/schematizers/schematizer-effect/index.d.ts"
+      ],
+      "schematizers/schematizer-effect/with-schemas": [
+        "./@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-typebox": [
+        "./@types/schematizers/schematizer-typebox/index.d.ts"
+      ],
+      "schematizers/schematizer-typebox/with-schemas": [
+        "./@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-valibot": [
+        "./@types/schematizers/schematizer-valibot/index.d.ts"
+      ],
+      "schematizers/schematizer-valibot/with-schemas": [
+        "./@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-yup": [
+        "./@types/schematizers/schematizer-yup/index.d.ts"
+      ],
+      "schematizers/schematizer-yup/with-schemas": [
+        "./@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-zod": [
+        "./@types/schematizers/schematizer-zod/index.d.ts"
+      ],
+      "schematizers/schematizer-zod/with-schemas": [
+        "./@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
+      ],
+      "store": [
+        "./@types/store/index.d.ts"
+      ],
+      "store/with-schemas": [
+        "./@types/store/with-schemas/index.d.ts"
+      ],
+      "synchronizers": [
+        "./@types/synchronizers/index.d.ts"
+      ],
+      "synchronizers/with-schemas": [
+        "./@types/synchronizers/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-broadcast-channel": [
+        "./@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
+      ],
+      "synchronizers/synchronizer-broadcast-channel/with-schemas": [
+        "./@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-local": [
+        "./@types/synchronizers/synchronizer-local/index.d.ts"
+      ],
+      "synchronizers/synchronizer-local/with-schemas": [
+        "./@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-client": [
+        "./@types/synchronizers/synchronizer-ws-client/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-client/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-durable-object": [
+        "./@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-simple": [
+        "./@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-simple/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server": [
+        "./@types/synchronizers/synchronizer-ws-server/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
+      ],
+      "ui-react-dom": [
+        "./@types/ui-react-dom/index.d.ts"
+      ],
+      "ui-react-dom/with-schemas": [
+        "./@types/ui-react-dom/with-schemas/index.d.ts"
+      ],
+      "ui-react-inspector": [
+        "./@types/ui-react-inspector/index.d.ts"
+      ],
+      "ui-react-inspector/with-schemas": [
+        "./@types/ui-react-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-react": [
+        "./@types/ui-react/index.d.ts"
+      ],
+      "ui-react/with-schemas": [
+        "./@types/ui-react/with-schemas/index.d.ts"
+      ],
+      "ui-solid-dom": [
+        "./@types/ui-solid-dom/index.d.ts"
+      ],
+      "ui-solid-dom/with-schemas": [
+        "./@types/ui-solid-dom/with-schemas/index.d.ts"
+      ],
+      "ui-solid-inspector": [
+        "./@types/ui-solid-inspector/index.d.ts"
+      ],
+      "ui-solid-inspector/with-schemas": [
+        "./@types/ui-solid-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-solid": [
+        "./@types/ui-solid/index.d.ts"
+      ],
+      "ui-solid/with-schemas": [
+        "./@types/ui-solid/with-schemas/index.d.ts"
+      ],
+      "ui-svelte-dom": [
+        "./@types/ui-svelte-dom/index.d.ts"
+      ],
+      "ui-svelte-dom/with-schemas": [
+        "./@types/ui-svelte-dom/with-schemas/index.d.ts"
+      ],
+      "ui-svelte-inspector": [
+        "./@types/ui-svelte-inspector/index.d.ts"
+      ],
+      "ui-svelte-inspector/with-schemas": [
+        "./@types/ui-svelte-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-svelte": [
+        "./@types/ui-svelte/index.d.ts"
+      ],
+      "ui-svelte/with-schemas": [
+        "./@types/ui-svelte/with-schemas/index.d.ts"
+      ],
+      "min": [
+        "./@types/index.d.ts"
+      ],
+      "min/with-schemas": [
+        "./@types/with-schemas/index.d.ts"
+      ],
+      "min/omni": [
+        "./@types/omni/index.d.ts"
+      ],
+      "min/omni/with-schemas": [
+        "./@types/omni/with-schemas/index.d.ts"
+      ],
+      "min/checkpoints": [
+        "./@types/checkpoints/index.d.ts"
+      ],
+      "min/checkpoints/with-schemas": [
+        "./@types/checkpoints/with-schemas/index.d.ts"
+      ],
+      "min/common": [
+        "./@types/common/index.d.ts"
+      ],
+      "min/common/with-schemas": [
+        "./@types/common/with-schemas/index.d.ts"
+      ],
+      "min/indexes": [
+        "./@types/indexes/index.d.ts"
+      ],
+      "min/indexes/with-schemas": [
+        "./@types/indexes/with-schemas/index.d.ts"
+      ],
+      "min/mergeable-store": [
+        "./@types/mergeable-store/index.d.ts"
+      ],
+      "min/mergeable-store/with-schemas": [
+        "./@types/mergeable-store/with-schemas/index.d.ts"
+      ],
+      "min/metrics": [
+        "./@types/metrics/index.d.ts"
+      ],
+      "min/metrics/with-schemas": [
+        "./@types/metrics/with-schemas/index.d.ts"
+      ],
+      "min/middleware": [
+        "./@types/middleware/index.d.ts"
+      ],
+      "min/middleware/with-schemas": [
+        "./@types/middleware/with-schemas/index.d.ts"
+      ],
+      "min/persisters": [
+        "./@types/persisters/index.d.ts"
+      ],
+      "min/persisters/with-schemas": [
+        "./@types/persisters/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-automerge": [
+        "./@types/persisters/persister-automerge/index.d.ts"
+      ],
+      "min/persisters/persister-automerge/with-schemas": [
+        "./@types/persisters/persister-automerge/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-browser": [
+        "./@types/persisters/persister-browser/index.d.ts"
+      ],
+      "min/persisters/persister-browser/with-schemas": [
+        "./@types/persisters/persister-browser/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-cr-sqlite-wasm": [
+        "./@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
+      ],
+      "min/persisters/persister-cr-sqlite-wasm/with-schemas": [
+        "./@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-storage": [
+        "./@types/persisters/persister-durable-object-storage/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-storage/with-schemas": [
+        "./@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-sql-storage": [
+        "./@types/persisters/persister-durable-object-sql-storage/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-sql-storage/with-schemas": [
+        "./@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-electric-sql": [
+        "./@types/persisters/persister-electric-sql/index.d.ts"
+      ],
+      "min/persisters/persister-electric-sql/with-schemas": [
+        "./@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-expo-sqlite": [
+        "./@types/persisters/persister-expo-sqlite/index.d.ts"
+      ],
+      "min/persisters/persister-expo-sqlite/with-schemas": [
+        "./@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-file": [
+        "./@types/persisters/persister-file/index.d.ts"
+      ],
+      "min/persisters/persister-file/with-schemas": [
+        "./@types/persisters/persister-file/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-indexed-db": [
+        "./@types/persisters/persister-indexed-db/index.d.ts"
+      ],
+      "min/persisters/persister-indexed-db/with-schemas": [
+        "./@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-libsql": [
+        "./@types/persisters/persister-libsql/index.d.ts"
+      ],
+      "min/persisters/persister-libsql/with-schemas": [
+        "./@types/persisters/persister-libsql/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-client": [
+        "./@types/persisters/persister-partykit-client/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-client/with-schemas": [
+        "./@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-server": [
+        "./@types/persisters/persister-partykit-server/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-server/with-schemas": [
+        "./@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-pglite": [
+        "./@types/persisters/persister-pglite/index.d.ts"
+      ],
+      "min/persisters/persister-pglite/with-schemas": [
+        "./@types/persisters/persister-pglite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-postgres": [
+        "./@types/persisters/persister-postgres/index.d.ts"
+      ],
+      "min/persisters/persister-postgres/with-schemas": [
+        "./@types/persisters/persister-postgres/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-powersync": [
+        "./@types/persisters/persister-powersync/index.d.ts"
+      ],
+      "min/persisters/persister-powersync/with-schemas": [
+        "./@types/persisters/persister-powersync/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-mmkv": [
+        "./@types/persisters/persister-react-native-mmkv/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-mmkv/with-schemas": [
+        "./@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-sqlite": [
+        "./@types/persisters/persister-react-native-sqlite/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-sqlite/with-schemas": [
+        "./@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-remote": [
+        "./@types/persisters/persister-remote/index.d.ts"
+      ],
+      "min/persisters/persister-remote/with-schemas": [
+        "./@types/persisters/persister-remote/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-bun": [
+        "./@types/persisters/persister-sqlite-bun/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-bun/with-schemas": [
+        "./@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-wasm": [
+        "./@types/persisters/persister-sqlite-wasm/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-wasm/with-schemas": [
+        "./@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite3": [
+        "./@types/persisters/persister-sqlite3/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite3/with-schemas": [
+        "./@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-yjs": [
+        "./@types/persisters/persister-yjs/index.d.ts"
+      ],
+      "min/persisters/persister-yjs/with-schemas": [
+        "./@types/persisters/persister-yjs/with-schemas/index.d.ts"
+      ],
+      "min/queries": [
+        "./@types/queries/index.d.ts"
+      ],
+      "min/queries/with-schemas": [
+        "./@types/queries/with-schemas/index.d.ts"
+      ],
+      "min/relationships": [
+        "./@types/relationships/index.d.ts"
+      ],
+      "min/relationships/with-schemas": [
+        "./@types/relationships/with-schemas/index.d.ts"
+      ],
+      "min/schematizers": [
+        "./@types/schematizers/index.d.ts"
+      ],
+      "min/schematizers/with-schemas": [
+        "./@types/schematizers/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-arktype": [
+        "./@types/schematizers/schematizer-arktype/index.d.ts"
+      ],
+      "min/schematizers/schematizer-arktype/with-schemas": [
+        "./@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-effect": [
+        "./@types/schematizers/schematizer-effect/index.d.ts"
+      ],
+      "min/schematizers/schematizer-effect/with-schemas": [
+        "./@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-typebox": [
+        "./@types/schematizers/schematizer-typebox/index.d.ts"
+      ],
+      "min/schematizers/schematizer-typebox/with-schemas": [
+        "./@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-valibot": [
+        "./@types/schematizers/schematizer-valibot/index.d.ts"
+      ],
+      "min/schematizers/schematizer-valibot/with-schemas": [
+        "./@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-yup": [
+        "./@types/schematizers/schematizer-yup/index.d.ts"
+      ],
+      "min/schematizers/schematizer-yup/with-schemas": [
+        "./@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-zod": [
+        "./@types/schematizers/schematizer-zod/index.d.ts"
+      ],
+      "min/schematizers/schematizer-zod/with-schemas": [
+        "./@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
+      ],
+      "min/store": [
+        "./@types/store/index.d.ts"
+      ],
+      "min/store/with-schemas": [
+        "./@types/store/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers": [
+        "./@types/synchronizers/index.d.ts"
+      ],
+      "min/synchronizers/with-schemas": [
+        "./@types/synchronizers/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-broadcast-channel": [
+        "./@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-broadcast-channel/with-schemas": [
+        "./@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-local": [
+        "./@types/synchronizers/synchronizer-local/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-local/with-schemas": [
+        "./@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-client": [
+        "./@types/synchronizers/synchronizer-ws-client/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-client/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-durable-object": [
+        "./@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-simple": [
+        "./@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-simple/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server": [
+        "./@types/synchronizers/synchronizer-ws-server/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server/with-schemas": [
+        "./@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
+      ],
+      "min/ui-react-dom": [
+        "./@types/ui-react-dom/index.d.ts"
+      ],
+      "min/ui-react-dom/with-schemas": [
+        "./@types/ui-react-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-react-inspector": [
+        "./@types/ui-react-inspector/index.d.ts"
+      ],
+      "min/ui-react-inspector/with-schemas": [
+        "./@types/ui-react-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-react": [
+        "./@types/ui-react/index.d.ts"
+      ],
+      "min/ui-react/with-schemas": [
+        "./@types/ui-react/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid-dom": [
+        "./@types/ui-solid-dom/index.d.ts"
+      ],
+      "min/ui-solid-dom/with-schemas": [
+        "./@types/ui-solid-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid-inspector": [
+        "./@types/ui-solid-inspector/index.d.ts"
+      ],
+      "min/ui-solid-inspector/with-schemas": [
+        "./@types/ui-solid-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid": [
+        "./@types/ui-solid/index.d.ts"
+      ],
+      "min/ui-solid/with-schemas": [
+        "./@types/ui-solid/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte-dom": [
+        "./@types/ui-svelte-dom/index.d.ts"
+      ],
+      "min/ui-svelte-dom/with-schemas": [
+        "./@types/ui-svelte-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte-inspector": [
+        "./@types/ui-svelte-inspector/index.d.ts"
+      ],
+      "min/ui-svelte-inspector/with-schemas": [
+        "./@types/ui-svelte-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte": [
+        "./@types/ui-svelte/index.d.ts"
+      ],
+      "min/ui-svelte/with-schemas": [
+        "./@types/ui-svelte/with-schemas/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
