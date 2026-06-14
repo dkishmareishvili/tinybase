@@ -697,6 +697,48 @@ const compileModulesForProd = async () => {
   });
 };
 
+// Prefix every relative './…' path with './dist/' so the repo root can act as
+// the published package (used to make the fork installable via `npm i github:`).
+const prefixDistPaths = (value) =>
+  typeof value === 'string'
+    ? value.startsWith('./')
+      ? './' + DIST_DIR + '/' + value.slice(2)
+      : value
+    : Array.isArray(value)
+      ? value.map(prefixDistPaths)
+      : value && typeof value === 'object'
+        ? Object.fromEntries(
+            Object.entries(value).map(([key, val]) => [
+              key,
+              prefixDistPaths(val),
+            ]),
+          )
+        : value;
+
+// Copy the entry-point fields from the generated dist/package.json into the root
+// package.json (prefixed to point into dist/), plus a `files` allow-list, so
+// `npm i github:<user>/<repo>` resolves against the committed dist/ build.
+const stampRootPackageJson = async () => {
+  const dist = JSON.parse(
+    await promises.readFile(join(DIST_DIR, 'package.json'), UTF8),
+  );
+  const root = JSON.parse(await promises.readFile('package.json', UTF8));
+
+  root.type = dist.type;
+  root.sideEffects = dist.sideEffects;
+  root.main = prefixDistPaths(dist.main);
+  root.types = prefixDistPaths(dist.types);
+  root.exports = prefixDistPaths(dist.exports);
+  root.typesVersions = prefixDistPaths(dist.typesVersions);
+  root.files = [DIST_DIR];
+
+  await promises.writeFile(
+    'package.json',
+    JSON.stringify(root, undefined, 2) + '\n',
+    UTF8,
+  );
+};
+
 const compileDocsAndAssets = async (api = true, pages = true) => {
   const {default: esbuild} = await import('esbuild');
 
@@ -779,6 +821,8 @@ export const ts = async () => {
 };
 
 export const compileForProd = () => compileModulesForProd();
+
+export const gitPackage = series(compileForProd, stampRootPackageJson);
 
 export const testUnit = async () => {
   await test(['test/unit'], true);
