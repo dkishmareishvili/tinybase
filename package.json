@@ -150,6 +150,7 @@
     "compileForTest": "gulp compileForTest",
     "compileForTestInspectorOnly": "gulp compileForTestInspectorOnly",
     "compileForProd": "gulp compileForProd",
+    "gitPackage": "gulp gitPackage",
     "testBun": "gulp testBun",
     "testUnit": "gulp testUnit",
     "compileAndTestUnit": "gulp compileAndTestUnit",
@@ -282,5 +283,2068 @@
     "yjs": "^13.6.31",
     "yup": "^1.7.1",
     "zod": "^4.4.3"
-  }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/@types/index.d.ts",
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./dist/@types/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./with-schemas": {
+      "default": {
+        "types": "./dist/@types/with-schemas/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./omni": {
+      "default": {
+        "types": "./dist/@types/omni/index.d.ts",
+        "default": "./dist/omni/index.js"
+      }
+    },
+    "./omni/with-schemas": {
+      "default": {
+        "types": "./dist/@types/omni/with-schemas/index.d.ts",
+        "default": "./dist/omni/index.js"
+      }
+    },
+    "./checkpoints": {
+      "default": {
+        "types": "./dist/@types/checkpoints/index.d.ts",
+        "default": "./dist/checkpoints/index.js"
+      }
+    },
+    "./checkpoints/with-schemas": {
+      "default": {
+        "types": "./dist/@types/checkpoints/with-schemas/index.d.ts",
+        "default": "./dist/checkpoints/index.js"
+      }
+    },
+    "./common": {
+      "default": {
+        "types": "./dist/@types/common/index.d.ts",
+        "default": "./dist/common/index.js"
+      }
+    },
+    "./common/with-schemas": {
+      "default": {
+        "types": "./dist/@types/common/with-schemas/index.d.ts",
+        "default": "./dist/common/index.js"
+      }
+    },
+    "./indexes": {
+      "default": {
+        "types": "./dist/@types/indexes/index.d.ts",
+        "default": "./dist/indexes/index.js"
+      }
+    },
+    "./indexes/with-schemas": {
+      "default": {
+        "types": "./dist/@types/indexes/with-schemas/index.d.ts",
+        "default": "./dist/indexes/index.js"
+      }
+    },
+    "./mergeable-store": {
+      "default": {
+        "types": "./dist/@types/mergeable-store/index.d.ts",
+        "default": "./dist/mergeable-store/index.js"
+      }
+    },
+    "./mergeable-store/with-schemas": {
+      "default": {
+        "types": "./dist/@types/mergeable-store/with-schemas/index.d.ts",
+        "default": "./dist/mergeable-store/index.js"
+      }
+    },
+    "./metrics": {
+      "default": {
+        "types": "./dist/@types/metrics/index.d.ts",
+        "default": "./dist/metrics/index.js"
+      }
+    },
+    "./metrics/with-schemas": {
+      "default": {
+        "types": "./dist/@types/metrics/with-schemas/index.d.ts",
+        "default": "./dist/metrics/index.js"
+      }
+    },
+    "./middleware": {
+      "default": {
+        "types": "./dist/@types/middleware/index.d.ts",
+        "default": "./dist/middleware/index.js"
+      }
+    },
+    "./middleware/with-schemas": {
+      "default": {
+        "types": "./dist/@types/middleware/with-schemas/index.d.ts",
+        "default": "./dist/middleware/index.js"
+      }
+    },
+    "./persisters": {
+      "default": {
+        "types": "./dist/@types/persisters/index.d.ts",
+        "default": "./dist/persisters/index.js"
+      }
+    },
+    "./persisters/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/with-schemas/index.d.ts",
+        "default": "./dist/persisters/index.js"
+      }
+    },
+    "./persisters/persister-automerge": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-automerge/index.d.ts",
+        "default": "./dist/persisters/persister-automerge/index.js"
+      }
+    },
+    "./persisters/persister-automerge/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-automerge/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-automerge/index.js"
+      }
+    },
+    "./persisters/persister-browser": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-browser/index.d.ts",
+        "default": "./dist/persisters/persister-browser/index.js"
+      }
+    },
+    "./persisters/persister-browser/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-browser/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-browser/index.js"
+      }
+    },
+    "./persisters/persister-cr-sqlite-wasm": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-cr-sqlite-wasm/index.d.ts",
+        "default": "./dist/persisters/persister-cr-sqlite-wasm/index.js"
+      }
+    },
+    "./persisters/persister-cr-sqlite-wasm/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-cr-sqlite-wasm/index.js"
+      }
+    },
+    "./persisters/persister-durable-object-storage": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-storage/index.d.ts",
+        "default": "./dist/persisters/persister-durable-object-storage/index.js"
+      }
+    },
+    "./persisters/persister-durable-object-storage/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-durable-object-storage/index.js"
+      }
+    },
+    "./persisters/persister-durable-object-sql-storage": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-sql-storage/index.d.ts",
+        "default": "./dist/persisters/persister-durable-object-sql-storage/index.js"
+      }
+    },
+    "./persisters/persister-durable-object-sql-storage/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-durable-object-sql-storage/index.js"
+      }
+    },
+    "./persisters/persister-electric-sql": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-electric-sql/index.d.ts",
+        "default": "./dist/persisters/persister-electric-sql/index.js"
+      }
+    },
+    "./persisters/persister-electric-sql/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-electric-sql/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-electric-sql/index.js"
+      }
+    },
+    "./persisters/persister-expo-sqlite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-expo-sqlite/index.d.ts",
+        "default": "./dist/persisters/persister-expo-sqlite/index.js"
+      }
+    },
+    "./persisters/persister-expo-sqlite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-expo-sqlite/index.js"
+      }
+    },
+    "./persisters/persister-file": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-file/index.d.ts",
+        "default": "./dist/persisters/persister-file/index.js"
+      }
+    },
+    "./persisters/persister-file/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-file/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-file/index.js"
+      }
+    },
+    "./persisters/persister-indexed-db": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-indexed-db/index.d.ts",
+        "default": "./dist/persisters/persister-indexed-db/index.js"
+      }
+    },
+    "./persisters/persister-indexed-db/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-indexed-db/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-indexed-db/index.js"
+      }
+    },
+    "./persisters/persister-libsql": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-libsql/index.d.ts",
+        "default": "./dist/persisters/persister-libsql/index.js"
+      }
+    },
+    "./persisters/persister-libsql/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-libsql/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-libsql/index.js"
+      }
+    },
+    "./persisters/persister-partykit-client": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-client/index.d.ts",
+        "default": "./dist/persisters/persister-partykit-client/index.js"
+      }
+    },
+    "./persisters/persister-partykit-client/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-client/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-partykit-client/index.js"
+      }
+    },
+    "./persisters/persister-partykit-server": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-server/index.d.ts",
+        "default": "./dist/persisters/persister-partykit-server/index.js"
+      }
+    },
+    "./persisters/persister-partykit-server/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-server/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-partykit-server/index.js"
+      }
+    },
+    "./persisters/persister-pglite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-pglite/index.d.ts",
+        "default": "./dist/persisters/persister-pglite/index.js"
+      }
+    },
+    "./persisters/persister-pglite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-pglite/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-pglite/index.js"
+      }
+    },
+    "./persisters/persister-postgres": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-postgres/index.d.ts",
+        "default": "./dist/persisters/persister-postgres/index.js"
+      }
+    },
+    "./persisters/persister-postgres/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-postgres/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-postgres/index.js"
+      }
+    },
+    "./persisters/persister-powersync": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-powersync/index.d.ts",
+        "default": "./dist/persisters/persister-powersync/index.js"
+      }
+    },
+    "./persisters/persister-powersync/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-powersync/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-powersync/index.js"
+      }
+    },
+    "./persisters/persister-react-native-mmkv": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-mmkv/index.d.ts",
+        "default": "./dist/persisters/persister-react-native-mmkv/index.js"
+      }
+    },
+    "./persisters/persister-react-native-mmkv/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-react-native-mmkv/index.js"
+      }
+    },
+    "./persisters/persister-react-native-sqlite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-sqlite/index.d.ts",
+        "default": "./dist/persisters/persister-react-native-sqlite/index.js"
+      }
+    },
+    "./persisters/persister-react-native-sqlite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-react-native-sqlite/index.js"
+      }
+    },
+    "./persisters/persister-remote": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-remote/index.d.ts",
+        "default": "./dist/persisters/persister-remote/index.js"
+      }
+    },
+    "./persisters/persister-remote/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-remote/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-remote/index.js"
+      }
+    },
+    "./persisters/persister-sqlite-bun": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-bun/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite-bun/index.js"
+      }
+    },
+    "./persisters/persister-sqlite-bun/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite-bun/index.js"
+      }
+    },
+    "./persisters/persister-sqlite-wasm": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-wasm/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite-wasm/index.js"
+      }
+    },
+    "./persisters/persister-sqlite-wasm/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite-wasm/index.js"
+      }
+    },
+    "./persisters/persister-sqlite3": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite3/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite3/index.js"
+      }
+    },
+    "./persisters/persister-sqlite3/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite3/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-sqlite3/index.js"
+      }
+    },
+    "./persisters/persister-yjs": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-yjs/index.d.ts",
+        "default": "./dist/persisters/persister-yjs/index.js"
+      }
+    },
+    "./persisters/persister-yjs/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-yjs/with-schemas/index.d.ts",
+        "default": "./dist/persisters/persister-yjs/index.js"
+      }
+    },
+    "./queries": {
+      "default": {
+        "types": "./dist/@types/queries/index.d.ts",
+        "default": "./dist/queries/index.js"
+      }
+    },
+    "./queries/with-schemas": {
+      "default": {
+        "types": "./dist/@types/queries/with-schemas/index.d.ts",
+        "default": "./dist/queries/index.js"
+      }
+    },
+    "./relationships": {
+      "default": {
+        "types": "./dist/@types/relationships/index.d.ts",
+        "default": "./dist/relationships/index.js"
+      }
+    },
+    "./relationships/with-schemas": {
+      "default": {
+        "types": "./dist/@types/relationships/with-schemas/index.d.ts",
+        "default": "./dist/relationships/index.js"
+      }
+    },
+    "./schematizers": {
+      "default": {
+        "types": "./dist/@types/schematizers/index.d.ts",
+        "default": "./dist/schematizers/index.js"
+      }
+    },
+    "./schematizers/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/index.js"
+      }
+    },
+    "./schematizers/schematizer-arktype": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-arktype/index.d.ts",
+        "default": "./dist/schematizers/schematizer-arktype/index.js"
+      }
+    },
+    "./schematizers/schematizer-arktype/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-arktype/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-arktype/index.js"
+      }
+    },
+    "./schematizers/schematizer-effect": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-effect/index.d.ts",
+        "default": "./dist/schematizers/schematizer-effect/index.js"
+      }
+    },
+    "./schematizers/schematizer-effect/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-effect/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-effect/index.js"
+      }
+    },
+    "./schematizers/schematizer-typebox": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-typebox/index.d.ts",
+        "default": "./dist/schematizers/schematizer-typebox/index.js"
+      }
+    },
+    "./schematizers/schematizer-typebox/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-typebox/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-typebox/index.js"
+      }
+    },
+    "./schematizers/schematizer-valibot": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-valibot/index.d.ts",
+        "default": "./dist/schematizers/schematizer-valibot/index.js"
+      }
+    },
+    "./schematizers/schematizer-valibot/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-valibot/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-valibot/index.js"
+      }
+    },
+    "./schematizers/schematizer-yup": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-yup/index.d.ts",
+        "default": "./dist/schematizers/schematizer-yup/index.js"
+      }
+    },
+    "./schematizers/schematizer-yup/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-yup/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-yup/index.js"
+      }
+    },
+    "./schematizers/schematizer-zod": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-zod/index.d.ts",
+        "default": "./dist/schematizers/schematizer-zod/index.js"
+      }
+    },
+    "./schematizers/schematizer-zod/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-zod/with-schemas/index.d.ts",
+        "default": "./dist/schematizers/schematizer-zod/index.js"
+      }
+    },
+    "./store": {
+      "default": {
+        "types": "./dist/@types/store/index.d.ts",
+        "default": "./dist/store/index.js"
+      }
+    },
+    "./store/with-schemas": {
+      "default": {
+        "types": "./dist/@types/store/with-schemas/index.d.ts",
+        "default": "./dist/store/index.js"
+      }
+    },
+    "./synchronizers": {
+      "default": {
+        "types": "./dist/@types/synchronizers/index.d.ts",
+        "default": "./dist/synchronizers/index.js"
+      }
+    },
+    "./synchronizers/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-broadcast-channel": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-broadcast-channel/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-broadcast-channel/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-broadcast-channel/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-broadcast-channel/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-local": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-local/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-local/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-local/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-local/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-local/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-client": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-client/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-client/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-client/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-client/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server-durable-object": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server-durable-object/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server-durable-object/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server-durable-object/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server-simple": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-simple/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server-simple/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server-simple/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server-simple/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server/index.js"
+      }
+    },
+    "./synchronizers/synchronizer-ws-server/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts",
+        "default": "./dist/synchronizers/synchronizer-ws-server/index.js"
+      }
+    },
+    "./ui-react-dom": {
+      "default": {
+        "types": "./dist/@types/ui-react-dom/index.d.ts",
+        "default": "./dist/ui-react-dom/index.js"
+      }
+    },
+    "./ui-react-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react-dom/with-schemas/index.d.ts",
+        "default": "./dist/ui-react-dom/index.js"
+      }
+    },
+    "./ui-react-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-react-inspector/index.d.ts",
+        "default": "./dist/ui-react-inspector/index.js"
+      }
+    },
+    "./ui-react-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react-inspector/with-schemas/index.d.ts",
+        "default": "./dist/ui-react-inspector/index.js"
+      }
+    },
+    "./ui-react": {
+      "default": {
+        "types": "./dist/@types/ui-react/index.d.ts",
+        "default": "./dist/ui-react/index.js"
+      }
+    },
+    "./ui-react/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react/with-schemas/index.d.ts",
+        "default": "./dist/ui-react/index.js"
+      }
+    },
+    "./ui-solid-dom": {
+      "default": {
+        "types": "./dist/@types/ui-solid-dom/index.d.ts",
+        "default": "./dist/ui-solid-dom/index.js"
+      }
+    },
+    "./ui-solid-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid-dom/with-schemas/index.d.ts",
+        "default": "./dist/ui-solid-dom/index.js"
+      }
+    },
+    "./ui-solid-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-solid-inspector/index.d.ts",
+        "default": "./dist/ui-solid-inspector/index.js"
+      }
+    },
+    "./ui-solid-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid-inspector/with-schemas/index.d.ts",
+        "default": "./dist/ui-solid-inspector/index.js"
+      }
+    },
+    "./ui-solid": {
+      "default": {
+        "types": "./dist/@types/ui-solid/index.d.ts",
+        "default": "./dist/ui-solid/index.js"
+      }
+    },
+    "./ui-solid/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid/with-schemas/index.d.ts",
+        "default": "./dist/ui-solid/index.js"
+      }
+    },
+    "./ui-svelte-dom": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-dom/index.d.ts",
+        "default": "./dist/ui-svelte-dom/index.js"
+      }
+    },
+    "./ui-svelte-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-dom/with-schemas/index.d.ts",
+        "default": "./dist/ui-svelte-dom/index.js"
+      }
+    },
+    "./ui-svelte-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-inspector/index.d.ts",
+        "default": "./dist/ui-svelte-inspector/index.js"
+      }
+    },
+    "./ui-svelte-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-inspector/with-schemas/index.d.ts",
+        "default": "./dist/ui-svelte-inspector/index.js"
+      }
+    },
+    "./ui-svelte": {
+      "default": {
+        "types": "./dist/@types/ui-svelte/index.d.ts",
+        "default": "./dist/ui-svelte/index.js"
+      }
+    },
+    "./ui-svelte/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte/with-schemas/index.d.ts",
+        "default": "./dist/ui-svelte/index.js"
+      }
+    },
+    "./min": {
+      "default": {
+        "types": "./dist/@types/index.d.ts",
+        "default": "./dist/min/index.js"
+      }
+    },
+    "./min/with-schemas": {
+      "default": {
+        "types": "./dist/@types/with-schemas/index.d.ts",
+        "default": "./dist/min/index.js"
+      }
+    },
+    "./min/omni": {
+      "default": {
+        "types": "./dist/@types/omni/index.d.ts",
+        "default": "./dist/min/omni/index.js"
+      }
+    },
+    "./min/omni/with-schemas": {
+      "default": {
+        "types": "./dist/@types/omni/with-schemas/index.d.ts",
+        "default": "./dist/min/omni/index.js"
+      }
+    },
+    "./min/checkpoints": {
+      "default": {
+        "types": "./dist/@types/checkpoints/index.d.ts",
+        "default": "./dist/min/checkpoints/index.js"
+      }
+    },
+    "./min/checkpoints/with-schemas": {
+      "default": {
+        "types": "./dist/@types/checkpoints/with-schemas/index.d.ts",
+        "default": "./dist/min/checkpoints/index.js"
+      }
+    },
+    "./min/common": {
+      "default": {
+        "types": "./dist/@types/common/index.d.ts",
+        "default": "./dist/min/common/index.js"
+      }
+    },
+    "./min/common/with-schemas": {
+      "default": {
+        "types": "./dist/@types/common/with-schemas/index.d.ts",
+        "default": "./dist/min/common/index.js"
+      }
+    },
+    "./min/indexes": {
+      "default": {
+        "types": "./dist/@types/indexes/index.d.ts",
+        "default": "./dist/min/indexes/index.js"
+      }
+    },
+    "./min/indexes/with-schemas": {
+      "default": {
+        "types": "./dist/@types/indexes/with-schemas/index.d.ts",
+        "default": "./dist/min/indexes/index.js"
+      }
+    },
+    "./min/mergeable-store": {
+      "default": {
+        "types": "./dist/@types/mergeable-store/index.d.ts",
+        "default": "./dist/min/mergeable-store/index.js"
+      }
+    },
+    "./min/mergeable-store/with-schemas": {
+      "default": {
+        "types": "./dist/@types/mergeable-store/with-schemas/index.d.ts",
+        "default": "./dist/min/mergeable-store/index.js"
+      }
+    },
+    "./min/metrics": {
+      "default": {
+        "types": "./dist/@types/metrics/index.d.ts",
+        "default": "./dist/min/metrics/index.js"
+      }
+    },
+    "./min/metrics/with-schemas": {
+      "default": {
+        "types": "./dist/@types/metrics/with-schemas/index.d.ts",
+        "default": "./dist/min/metrics/index.js"
+      }
+    },
+    "./min/middleware": {
+      "default": {
+        "types": "./dist/@types/middleware/index.d.ts",
+        "default": "./dist/min/middleware/index.js"
+      }
+    },
+    "./min/middleware/with-schemas": {
+      "default": {
+        "types": "./dist/@types/middleware/with-schemas/index.d.ts",
+        "default": "./dist/min/middleware/index.js"
+      }
+    },
+    "./min/persisters": {
+      "default": {
+        "types": "./dist/@types/persisters/index.d.ts",
+        "default": "./dist/min/persisters/index.js"
+      }
+    },
+    "./min/persisters/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/index.js"
+      }
+    },
+    "./min/persisters/persister-automerge": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-automerge/index.d.ts",
+        "default": "./dist/min/persisters/persister-automerge/index.js"
+      }
+    },
+    "./min/persisters/persister-automerge/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-automerge/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-automerge/index.js"
+      }
+    },
+    "./min/persisters/persister-browser": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-browser/index.d.ts",
+        "default": "./dist/min/persisters/persister-browser/index.js"
+      }
+    },
+    "./min/persisters/persister-browser/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-browser/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-browser/index.js"
+      }
+    },
+    "./min/persisters/persister-cr-sqlite-wasm": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-cr-sqlite-wasm/index.d.ts",
+        "default": "./dist/min/persisters/persister-cr-sqlite-wasm/index.js"
+      }
+    },
+    "./min/persisters/persister-cr-sqlite-wasm/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-cr-sqlite-wasm/index.js"
+      }
+    },
+    "./min/persisters/persister-durable-object-storage": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-storage/index.d.ts",
+        "default": "./dist/min/persisters/persister-durable-object-storage/index.js"
+      }
+    },
+    "./min/persisters/persister-durable-object-storage/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-durable-object-storage/index.js"
+      }
+    },
+    "./min/persisters/persister-durable-object-sql-storage": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-sql-storage/index.d.ts",
+        "default": "./dist/min/persisters/persister-durable-object-sql-storage/index.js"
+      }
+    },
+    "./min/persisters/persister-durable-object-sql-storage/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-durable-object-sql-storage/index.js"
+      }
+    },
+    "./min/persisters/persister-electric-sql": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-electric-sql/index.d.ts",
+        "default": "./dist/min/persisters/persister-electric-sql/index.js"
+      }
+    },
+    "./min/persisters/persister-electric-sql/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-electric-sql/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-electric-sql/index.js"
+      }
+    },
+    "./min/persisters/persister-expo-sqlite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-expo-sqlite/index.d.ts",
+        "default": "./dist/min/persisters/persister-expo-sqlite/index.js"
+      }
+    },
+    "./min/persisters/persister-expo-sqlite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-expo-sqlite/index.js"
+      }
+    },
+    "./min/persisters/persister-file": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-file/index.d.ts",
+        "default": "./dist/min/persisters/persister-file/index.js"
+      }
+    },
+    "./min/persisters/persister-file/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-file/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-file/index.js"
+      }
+    },
+    "./min/persisters/persister-indexed-db": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-indexed-db/index.d.ts",
+        "default": "./dist/min/persisters/persister-indexed-db/index.js"
+      }
+    },
+    "./min/persisters/persister-indexed-db/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-indexed-db/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-indexed-db/index.js"
+      }
+    },
+    "./min/persisters/persister-libsql": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-libsql/index.d.ts",
+        "default": "./dist/min/persisters/persister-libsql/index.js"
+      }
+    },
+    "./min/persisters/persister-libsql/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-libsql/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-libsql/index.js"
+      }
+    },
+    "./min/persisters/persister-partykit-client": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-client/index.d.ts",
+        "default": "./dist/min/persisters/persister-partykit-client/index.js"
+      }
+    },
+    "./min/persisters/persister-partykit-client/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-client/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-partykit-client/index.js"
+      }
+    },
+    "./min/persisters/persister-partykit-server": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-server/index.d.ts",
+        "default": "./dist/min/persisters/persister-partykit-server/index.js"
+      }
+    },
+    "./min/persisters/persister-partykit-server/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-partykit-server/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-partykit-server/index.js"
+      }
+    },
+    "./min/persisters/persister-pglite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-pglite/index.d.ts",
+        "default": "./dist/min/persisters/persister-pglite/index.js"
+      }
+    },
+    "./min/persisters/persister-pglite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-pglite/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-pglite/index.js"
+      }
+    },
+    "./min/persisters/persister-postgres": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-postgres/index.d.ts",
+        "default": "./dist/min/persisters/persister-postgres/index.js"
+      }
+    },
+    "./min/persisters/persister-postgres/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-postgres/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-postgres/index.js"
+      }
+    },
+    "./min/persisters/persister-powersync": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-powersync/index.d.ts",
+        "default": "./dist/min/persisters/persister-powersync/index.js"
+      }
+    },
+    "./min/persisters/persister-powersync/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-powersync/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-powersync/index.js"
+      }
+    },
+    "./min/persisters/persister-react-native-mmkv": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-mmkv/index.d.ts",
+        "default": "./dist/min/persisters/persister-react-native-mmkv/index.js"
+      }
+    },
+    "./min/persisters/persister-react-native-mmkv/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-react-native-mmkv/index.js"
+      }
+    },
+    "./min/persisters/persister-react-native-sqlite": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-sqlite/index.d.ts",
+        "default": "./dist/min/persisters/persister-react-native-sqlite/index.js"
+      }
+    },
+    "./min/persisters/persister-react-native-sqlite/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-react-native-sqlite/index.js"
+      }
+    },
+    "./min/persisters/persister-remote": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-remote/index.d.ts",
+        "default": "./dist/min/persisters/persister-remote/index.js"
+      }
+    },
+    "./min/persisters/persister-remote/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-remote/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-remote/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite-bun": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-bun/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite-bun/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite-bun/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite-bun/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite-wasm": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-wasm/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite-wasm/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite-wasm/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite-wasm/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite3": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite3/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite3/index.js"
+      }
+    },
+    "./min/persisters/persister-sqlite3/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-sqlite3/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-sqlite3/index.js"
+      }
+    },
+    "./min/persisters/persister-yjs": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-yjs/index.d.ts",
+        "default": "./dist/min/persisters/persister-yjs/index.js"
+      }
+    },
+    "./min/persisters/persister-yjs/with-schemas": {
+      "default": {
+        "types": "./dist/@types/persisters/persister-yjs/with-schemas/index.d.ts",
+        "default": "./dist/min/persisters/persister-yjs/index.js"
+      }
+    },
+    "./min/queries": {
+      "default": {
+        "types": "./dist/@types/queries/index.d.ts",
+        "default": "./dist/min/queries/index.js"
+      }
+    },
+    "./min/queries/with-schemas": {
+      "default": {
+        "types": "./dist/@types/queries/with-schemas/index.d.ts",
+        "default": "./dist/min/queries/index.js"
+      }
+    },
+    "./min/relationships": {
+      "default": {
+        "types": "./dist/@types/relationships/index.d.ts",
+        "default": "./dist/min/relationships/index.js"
+      }
+    },
+    "./min/relationships/with-schemas": {
+      "default": {
+        "types": "./dist/@types/relationships/with-schemas/index.d.ts",
+        "default": "./dist/min/relationships/index.js"
+      }
+    },
+    "./min/schematizers": {
+      "default": {
+        "types": "./dist/@types/schematizers/index.d.ts",
+        "default": "./dist/min/schematizers/index.js"
+      }
+    },
+    "./min/schematizers/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-arktype": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-arktype/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-arktype/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-arktype/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-arktype/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-arktype/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-effect": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-effect/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-effect/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-effect/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-effect/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-effect/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-typebox": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-typebox/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-typebox/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-typebox/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-typebox/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-typebox/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-valibot": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-valibot/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-valibot/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-valibot/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-valibot/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-valibot/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-yup": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-yup/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-yup/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-yup/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-yup/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-yup/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-zod": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-zod/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-zod/index.js"
+      }
+    },
+    "./min/schematizers/schematizer-zod/with-schemas": {
+      "default": {
+        "types": "./dist/@types/schematizers/schematizer-zod/with-schemas/index.d.ts",
+        "default": "./dist/min/schematizers/schematizer-zod/index.js"
+      }
+    },
+    "./min/store": {
+      "default": {
+        "types": "./dist/@types/store/index.d.ts",
+        "default": "./dist/min/store/index.js"
+      }
+    },
+    "./min/store/with-schemas": {
+      "default": {
+        "types": "./dist/@types/store/with-schemas/index.d.ts",
+        "default": "./dist/min/store/index.js"
+      }
+    },
+    "./min/synchronizers": {
+      "default": {
+        "types": "./dist/@types/synchronizers/index.d.ts",
+        "default": "./dist/min/synchronizers/index.js"
+      }
+    },
+    "./min/synchronizers/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-broadcast-channel": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-broadcast-channel/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-broadcast-channel/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-broadcast-channel/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-broadcast-channel/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-local": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-local/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-local/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-local/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-local/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-local/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-client": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-client/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-client/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-client/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-client/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server-durable-object": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server-durable-object/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server-durable-object/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server-durable-object/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server-simple": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-simple/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server-simple/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server-simple/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server-simple/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server/index.js"
+      }
+    },
+    "./min/synchronizers/synchronizer-ws-server/with-schemas": {
+      "default": {
+        "types": "./dist/@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts",
+        "default": "./dist/min/synchronizers/synchronizer-ws-server/index.js"
+      }
+    },
+    "./min/ui-react-dom": {
+      "default": {
+        "types": "./dist/@types/ui-react-dom/index.d.ts",
+        "default": "./dist/min/ui-react-dom/index.js"
+      }
+    },
+    "./min/ui-react-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react-dom/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-react-dom/index.js"
+      }
+    },
+    "./min/ui-react-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-react-inspector/index.d.ts",
+        "default": "./dist/min/ui-react-inspector/index.js"
+      }
+    },
+    "./min/ui-react-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react-inspector/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-react-inspector/index.js"
+      }
+    },
+    "./min/ui-react": {
+      "default": {
+        "types": "./dist/@types/ui-react/index.d.ts",
+        "default": "./dist/min/ui-react/index.js"
+      }
+    },
+    "./min/ui-react/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-react/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-react/index.js"
+      }
+    },
+    "./min/ui-solid-dom": {
+      "default": {
+        "types": "./dist/@types/ui-solid-dom/index.d.ts",
+        "default": "./dist/min/ui-solid-dom/index.js"
+      }
+    },
+    "./min/ui-solid-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid-dom/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-solid-dom/index.js"
+      }
+    },
+    "./min/ui-solid-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-solid-inspector/index.d.ts",
+        "default": "./dist/min/ui-solid-inspector/index.js"
+      }
+    },
+    "./min/ui-solid-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid-inspector/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-solid-inspector/index.js"
+      }
+    },
+    "./min/ui-solid": {
+      "default": {
+        "types": "./dist/@types/ui-solid/index.d.ts",
+        "default": "./dist/min/ui-solid/index.js"
+      }
+    },
+    "./min/ui-solid/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-solid/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-solid/index.js"
+      }
+    },
+    "./min/ui-svelte-dom": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-dom/index.d.ts",
+        "default": "./dist/min/ui-svelte-dom/index.js"
+      }
+    },
+    "./min/ui-svelte-dom/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-dom/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-svelte-dom/index.js"
+      }
+    },
+    "./min/ui-svelte-inspector": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-inspector/index.d.ts",
+        "default": "./dist/min/ui-svelte-inspector/index.js"
+      }
+    },
+    "./min/ui-svelte-inspector/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte-inspector/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-svelte-inspector/index.js"
+      }
+    },
+    "./min/ui-svelte": {
+      "default": {
+        "types": "./dist/@types/ui-svelte/index.d.ts",
+        "default": "./dist/min/ui-svelte/index.js"
+      }
+    },
+    "./min/ui-svelte/with-schemas": {
+      "default": {
+        "types": "./dist/@types/ui-svelte/with-schemas/index.d.ts",
+        "default": "./dist/min/ui-svelte/index.js"
+      }
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/@types/index.d.ts"
+      ],
+      "with-schemas": [
+        "./dist/@types/with-schemas/index.d.ts"
+      ],
+      "omni": [
+        "./dist/@types/omni/index.d.ts"
+      ],
+      "omni/with-schemas": [
+        "./dist/@types/omni/with-schemas/index.d.ts"
+      ],
+      "checkpoints": [
+        "./dist/@types/checkpoints/index.d.ts"
+      ],
+      "checkpoints/with-schemas": [
+        "./dist/@types/checkpoints/with-schemas/index.d.ts"
+      ],
+      "common": [
+        "./dist/@types/common/index.d.ts"
+      ],
+      "common/with-schemas": [
+        "./dist/@types/common/with-schemas/index.d.ts"
+      ],
+      "indexes": [
+        "./dist/@types/indexes/index.d.ts"
+      ],
+      "indexes/with-schemas": [
+        "./dist/@types/indexes/with-schemas/index.d.ts"
+      ],
+      "mergeable-store": [
+        "./dist/@types/mergeable-store/index.d.ts"
+      ],
+      "mergeable-store/with-schemas": [
+        "./dist/@types/mergeable-store/with-schemas/index.d.ts"
+      ],
+      "metrics": [
+        "./dist/@types/metrics/index.d.ts"
+      ],
+      "metrics/with-schemas": [
+        "./dist/@types/metrics/with-schemas/index.d.ts"
+      ],
+      "middleware": [
+        "./dist/@types/middleware/index.d.ts"
+      ],
+      "middleware/with-schemas": [
+        "./dist/@types/middleware/with-schemas/index.d.ts"
+      ],
+      "persisters": [
+        "./dist/@types/persisters/index.d.ts"
+      ],
+      "persisters/with-schemas": [
+        "./dist/@types/persisters/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-automerge": [
+        "./dist/@types/persisters/persister-automerge/index.d.ts"
+      ],
+      "persisters/persister-automerge/with-schemas": [
+        "./dist/@types/persisters/persister-automerge/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-browser": [
+        "./dist/@types/persisters/persister-browser/index.d.ts"
+      ],
+      "persisters/persister-browser/with-schemas": [
+        "./dist/@types/persisters/persister-browser/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-cr-sqlite-wasm": [
+        "./dist/@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
+      ],
+      "persisters/persister-cr-sqlite-wasm/with-schemas": [
+        "./dist/@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-durable-object-storage": [
+        "./dist/@types/persisters/persister-durable-object-storage/index.d.ts"
+      ],
+      "persisters/persister-durable-object-storage/with-schemas": [
+        "./dist/@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-durable-object-sql-storage": [
+        "./dist/@types/persisters/persister-durable-object-sql-storage/index.d.ts"
+      ],
+      "persisters/persister-durable-object-sql-storage/with-schemas": [
+        "./dist/@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-electric-sql": [
+        "./dist/@types/persisters/persister-electric-sql/index.d.ts"
+      ],
+      "persisters/persister-electric-sql/with-schemas": [
+        "./dist/@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-expo-sqlite": [
+        "./dist/@types/persisters/persister-expo-sqlite/index.d.ts"
+      ],
+      "persisters/persister-expo-sqlite/with-schemas": [
+        "./dist/@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-file": [
+        "./dist/@types/persisters/persister-file/index.d.ts"
+      ],
+      "persisters/persister-file/with-schemas": [
+        "./dist/@types/persisters/persister-file/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-indexed-db": [
+        "./dist/@types/persisters/persister-indexed-db/index.d.ts"
+      ],
+      "persisters/persister-indexed-db/with-schemas": [
+        "./dist/@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-libsql": [
+        "./dist/@types/persisters/persister-libsql/index.d.ts"
+      ],
+      "persisters/persister-libsql/with-schemas": [
+        "./dist/@types/persisters/persister-libsql/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-partykit-client": [
+        "./dist/@types/persisters/persister-partykit-client/index.d.ts"
+      ],
+      "persisters/persister-partykit-client/with-schemas": [
+        "./dist/@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-partykit-server": [
+        "./dist/@types/persisters/persister-partykit-server/index.d.ts"
+      ],
+      "persisters/persister-partykit-server/with-schemas": [
+        "./dist/@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-pglite": [
+        "./dist/@types/persisters/persister-pglite/index.d.ts"
+      ],
+      "persisters/persister-pglite/with-schemas": [
+        "./dist/@types/persisters/persister-pglite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-postgres": [
+        "./dist/@types/persisters/persister-postgres/index.d.ts"
+      ],
+      "persisters/persister-postgres/with-schemas": [
+        "./dist/@types/persisters/persister-postgres/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-powersync": [
+        "./dist/@types/persisters/persister-powersync/index.d.ts"
+      ],
+      "persisters/persister-powersync/with-schemas": [
+        "./dist/@types/persisters/persister-powersync/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-react-native-mmkv": [
+        "./dist/@types/persisters/persister-react-native-mmkv/index.d.ts"
+      ],
+      "persisters/persister-react-native-mmkv/with-schemas": [
+        "./dist/@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-react-native-sqlite": [
+        "./dist/@types/persisters/persister-react-native-sqlite/index.d.ts"
+      ],
+      "persisters/persister-react-native-sqlite/with-schemas": [
+        "./dist/@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-remote": [
+        "./dist/@types/persisters/persister-remote/index.d.ts"
+      ],
+      "persisters/persister-remote/with-schemas": [
+        "./dist/@types/persisters/persister-remote/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite-bun": [
+        "./dist/@types/persisters/persister-sqlite-bun/index.d.ts"
+      ],
+      "persisters/persister-sqlite-bun/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite-wasm": [
+        "./dist/@types/persisters/persister-sqlite-wasm/index.d.ts"
+      ],
+      "persisters/persister-sqlite-wasm/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-sqlite3": [
+        "./dist/@types/persisters/persister-sqlite3/index.d.ts"
+      ],
+      "persisters/persister-sqlite3/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
+      ],
+      "persisters/persister-yjs": [
+        "./dist/@types/persisters/persister-yjs/index.d.ts"
+      ],
+      "persisters/persister-yjs/with-schemas": [
+        "./dist/@types/persisters/persister-yjs/with-schemas/index.d.ts"
+      ],
+      "queries": [
+        "./dist/@types/queries/index.d.ts"
+      ],
+      "queries/with-schemas": [
+        "./dist/@types/queries/with-schemas/index.d.ts"
+      ],
+      "relationships": [
+        "./dist/@types/relationships/index.d.ts"
+      ],
+      "relationships/with-schemas": [
+        "./dist/@types/relationships/with-schemas/index.d.ts"
+      ],
+      "schematizers": [
+        "./dist/@types/schematizers/index.d.ts"
+      ],
+      "schematizers/with-schemas": [
+        "./dist/@types/schematizers/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-arktype": [
+        "./dist/@types/schematizers/schematizer-arktype/index.d.ts"
+      ],
+      "schematizers/schematizer-arktype/with-schemas": [
+        "./dist/@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-effect": [
+        "./dist/@types/schematizers/schematizer-effect/index.d.ts"
+      ],
+      "schematizers/schematizer-effect/with-schemas": [
+        "./dist/@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-typebox": [
+        "./dist/@types/schematizers/schematizer-typebox/index.d.ts"
+      ],
+      "schematizers/schematizer-typebox/with-schemas": [
+        "./dist/@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-valibot": [
+        "./dist/@types/schematizers/schematizer-valibot/index.d.ts"
+      ],
+      "schematizers/schematizer-valibot/with-schemas": [
+        "./dist/@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-yup": [
+        "./dist/@types/schematizers/schematizer-yup/index.d.ts"
+      ],
+      "schematizers/schematizer-yup/with-schemas": [
+        "./dist/@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
+      ],
+      "schematizers/schematizer-zod": [
+        "./dist/@types/schematizers/schematizer-zod/index.d.ts"
+      ],
+      "schematizers/schematizer-zod/with-schemas": [
+        "./dist/@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
+      ],
+      "store": [
+        "./dist/@types/store/index.d.ts"
+      ],
+      "store/with-schemas": [
+        "./dist/@types/store/with-schemas/index.d.ts"
+      ],
+      "synchronizers": [
+        "./dist/@types/synchronizers/index.d.ts"
+      ],
+      "synchronizers/with-schemas": [
+        "./dist/@types/synchronizers/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-broadcast-channel": [
+        "./dist/@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
+      ],
+      "synchronizers/synchronizer-broadcast-channel/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-local": [
+        "./dist/@types/synchronizers/synchronizer-local/index.d.ts"
+      ],
+      "synchronizers/synchronizer-local/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-client": [
+        "./dist/@types/synchronizers/synchronizer-ws-client/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-client/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-durable-object": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-simple": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server-simple/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server": [
+        "./dist/@types/synchronizers/synchronizer-ws-server/index.d.ts"
+      ],
+      "synchronizers/synchronizer-ws-server/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
+      ],
+      "ui-react-dom": [
+        "./dist/@types/ui-react-dom/index.d.ts"
+      ],
+      "ui-react-dom/with-schemas": [
+        "./dist/@types/ui-react-dom/with-schemas/index.d.ts"
+      ],
+      "ui-react-inspector": [
+        "./dist/@types/ui-react-inspector/index.d.ts"
+      ],
+      "ui-react-inspector/with-schemas": [
+        "./dist/@types/ui-react-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-react": [
+        "./dist/@types/ui-react/index.d.ts"
+      ],
+      "ui-react/with-schemas": [
+        "./dist/@types/ui-react/with-schemas/index.d.ts"
+      ],
+      "ui-solid-dom": [
+        "./dist/@types/ui-solid-dom/index.d.ts"
+      ],
+      "ui-solid-dom/with-schemas": [
+        "./dist/@types/ui-solid-dom/with-schemas/index.d.ts"
+      ],
+      "ui-solid-inspector": [
+        "./dist/@types/ui-solid-inspector/index.d.ts"
+      ],
+      "ui-solid-inspector/with-schemas": [
+        "./dist/@types/ui-solid-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-solid": [
+        "./dist/@types/ui-solid/index.d.ts"
+      ],
+      "ui-solid/with-schemas": [
+        "./dist/@types/ui-solid/with-schemas/index.d.ts"
+      ],
+      "ui-svelte-dom": [
+        "./dist/@types/ui-svelte-dom/index.d.ts"
+      ],
+      "ui-svelte-dom/with-schemas": [
+        "./dist/@types/ui-svelte-dom/with-schemas/index.d.ts"
+      ],
+      "ui-svelte-inspector": [
+        "./dist/@types/ui-svelte-inspector/index.d.ts"
+      ],
+      "ui-svelte-inspector/with-schemas": [
+        "./dist/@types/ui-svelte-inspector/with-schemas/index.d.ts"
+      ],
+      "ui-svelte": [
+        "./dist/@types/ui-svelte/index.d.ts"
+      ],
+      "ui-svelte/with-schemas": [
+        "./dist/@types/ui-svelte/with-schemas/index.d.ts"
+      ],
+      "min": [
+        "./dist/@types/index.d.ts"
+      ],
+      "min/with-schemas": [
+        "./dist/@types/with-schemas/index.d.ts"
+      ],
+      "min/omni": [
+        "./dist/@types/omni/index.d.ts"
+      ],
+      "min/omni/with-schemas": [
+        "./dist/@types/omni/with-schemas/index.d.ts"
+      ],
+      "min/checkpoints": [
+        "./dist/@types/checkpoints/index.d.ts"
+      ],
+      "min/checkpoints/with-schemas": [
+        "./dist/@types/checkpoints/with-schemas/index.d.ts"
+      ],
+      "min/common": [
+        "./dist/@types/common/index.d.ts"
+      ],
+      "min/common/with-schemas": [
+        "./dist/@types/common/with-schemas/index.d.ts"
+      ],
+      "min/indexes": [
+        "./dist/@types/indexes/index.d.ts"
+      ],
+      "min/indexes/with-schemas": [
+        "./dist/@types/indexes/with-schemas/index.d.ts"
+      ],
+      "min/mergeable-store": [
+        "./dist/@types/mergeable-store/index.d.ts"
+      ],
+      "min/mergeable-store/with-schemas": [
+        "./dist/@types/mergeable-store/with-schemas/index.d.ts"
+      ],
+      "min/metrics": [
+        "./dist/@types/metrics/index.d.ts"
+      ],
+      "min/metrics/with-schemas": [
+        "./dist/@types/metrics/with-schemas/index.d.ts"
+      ],
+      "min/middleware": [
+        "./dist/@types/middleware/index.d.ts"
+      ],
+      "min/middleware/with-schemas": [
+        "./dist/@types/middleware/with-schemas/index.d.ts"
+      ],
+      "min/persisters": [
+        "./dist/@types/persisters/index.d.ts"
+      ],
+      "min/persisters/with-schemas": [
+        "./dist/@types/persisters/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-automerge": [
+        "./dist/@types/persisters/persister-automerge/index.d.ts"
+      ],
+      "min/persisters/persister-automerge/with-schemas": [
+        "./dist/@types/persisters/persister-automerge/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-browser": [
+        "./dist/@types/persisters/persister-browser/index.d.ts"
+      ],
+      "min/persisters/persister-browser/with-schemas": [
+        "./dist/@types/persisters/persister-browser/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-cr-sqlite-wasm": [
+        "./dist/@types/persisters/persister-cr-sqlite-wasm/index.d.ts"
+      ],
+      "min/persisters/persister-cr-sqlite-wasm/with-schemas": [
+        "./dist/@types/persisters/persister-cr-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-storage": [
+        "./dist/@types/persisters/persister-durable-object-storage/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-storage/with-schemas": [
+        "./dist/@types/persisters/persister-durable-object-storage/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-sql-storage": [
+        "./dist/@types/persisters/persister-durable-object-sql-storage/index.d.ts"
+      ],
+      "min/persisters/persister-durable-object-sql-storage/with-schemas": [
+        "./dist/@types/persisters/persister-durable-object-sql-storage/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-electric-sql": [
+        "./dist/@types/persisters/persister-electric-sql/index.d.ts"
+      ],
+      "min/persisters/persister-electric-sql/with-schemas": [
+        "./dist/@types/persisters/persister-electric-sql/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-expo-sqlite": [
+        "./dist/@types/persisters/persister-expo-sqlite/index.d.ts"
+      ],
+      "min/persisters/persister-expo-sqlite/with-schemas": [
+        "./dist/@types/persisters/persister-expo-sqlite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-file": [
+        "./dist/@types/persisters/persister-file/index.d.ts"
+      ],
+      "min/persisters/persister-file/with-schemas": [
+        "./dist/@types/persisters/persister-file/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-indexed-db": [
+        "./dist/@types/persisters/persister-indexed-db/index.d.ts"
+      ],
+      "min/persisters/persister-indexed-db/with-schemas": [
+        "./dist/@types/persisters/persister-indexed-db/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-libsql": [
+        "./dist/@types/persisters/persister-libsql/index.d.ts"
+      ],
+      "min/persisters/persister-libsql/with-schemas": [
+        "./dist/@types/persisters/persister-libsql/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-client": [
+        "./dist/@types/persisters/persister-partykit-client/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-client/with-schemas": [
+        "./dist/@types/persisters/persister-partykit-client/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-server": [
+        "./dist/@types/persisters/persister-partykit-server/index.d.ts"
+      ],
+      "min/persisters/persister-partykit-server/with-schemas": [
+        "./dist/@types/persisters/persister-partykit-server/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-pglite": [
+        "./dist/@types/persisters/persister-pglite/index.d.ts"
+      ],
+      "min/persisters/persister-pglite/with-schemas": [
+        "./dist/@types/persisters/persister-pglite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-postgres": [
+        "./dist/@types/persisters/persister-postgres/index.d.ts"
+      ],
+      "min/persisters/persister-postgres/with-schemas": [
+        "./dist/@types/persisters/persister-postgres/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-powersync": [
+        "./dist/@types/persisters/persister-powersync/index.d.ts"
+      ],
+      "min/persisters/persister-powersync/with-schemas": [
+        "./dist/@types/persisters/persister-powersync/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-mmkv": [
+        "./dist/@types/persisters/persister-react-native-mmkv/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-mmkv/with-schemas": [
+        "./dist/@types/persisters/persister-react-native-mmkv/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-sqlite": [
+        "./dist/@types/persisters/persister-react-native-sqlite/index.d.ts"
+      ],
+      "min/persisters/persister-react-native-sqlite/with-schemas": [
+        "./dist/@types/persisters/persister-react-native-sqlite/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-remote": [
+        "./dist/@types/persisters/persister-remote/index.d.ts"
+      ],
+      "min/persisters/persister-remote/with-schemas": [
+        "./dist/@types/persisters/persister-remote/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-bun": [
+        "./dist/@types/persisters/persister-sqlite-bun/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-bun/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite-bun/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-wasm": [
+        "./dist/@types/persisters/persister-sqlite-wasm/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite-wasm/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite-wasm/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite3": [
+        "./dist/@types/persisters/persister-sqlite3/index.d.ts"
+      ],
+      "min/persisters/persister-sqlite3/with-schemas": [
+        "./dist/@types/persisters/persister-sqlite3/with-schemas/index.d.ts"
+      ],
+      "min/persisters/persister-yjs": [
+        "./dist/@types/persisters/persister-yjs/index.d.ts"
+      ],
+      "min/persisters/persister-yjs/with-schemas": [
+        "./dist/@types/persisters/persister-yjs/with-schemas/index.d.ts"
+      ],
+      "min/queries": [
+        "./dist/@types/queries/index.d.ts"
+      ],
+      "min/queries/with-schemas": [
+        "./dist/@types/queries/with-schemas/index.d.ts"
+      ],
+      "min/relationships": [
+        "./dist/@types/relationships/index.d.ts"
+      ],
+      "min/relationships/with-schemas": [
+        "./dist/@types/relationships/with-schemas/index.d.ts"
+      ],
+      "min/schematizers": [
+        "./dist/@types/schematizers/index.d.ts"
+      ],
+      "min/schematizers/with-schemas": [
+        "./dist/@types/schematizers/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-arktype": [
+        "./dist/@types/schematizers/schematizer-arktype/index.d.ts"
+      ],
+      "min/schematizers/schematizer-arktype/with-schemas": [
+        "./dist/@types/schematizers/schematizer-arktype/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-effect": [
+        "./dist/@types/schematizers/schematizer-effect/index.d.ts"
+      ],
+      "min/schematizers/schematizer-effect/with-schemas": [
+        "./dist/@types/schematizers/schematizer-effect/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-typebox": [
+        "./dist/@types/schematizers/schematizer-typebox/index.d.ts"
+      ],
+      "min/schematizers/schematizer-typebox/with-schemas": [
+        "./dist/@types/schematizers/schematizer-typebox/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-valibot": [
+        "./dist/@types/schematizers/schematizer-valibot/index.d.ts"
+      ],
+      "min/schematizers/schematizer-valibot/with-schemas": [
+        "./dist/@types/schematizers/schematizer-valibot/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-yup": [
+        "./dist/@types/schematizers/schematizer-yup/index.d.ts"
+      ],
+      "min/schematizers/schematizer-yup/with-schemas": [
+        "./dist/@types/schematizers/schematizer-yup/with-schemas/index.d.ts"
+      ],
+      "min/schematizers/schematizer-zod": [
+        "./dist/@types/schematizers/schematizer-zod/index.d.ts"
+      ],
+      "min/schematizers/schematizer-zod/with-schemas": [
+        "./dist/@types/schematizers/schematizer-zod/with-schemas/index.d.ts"
+      ],
+      "min/store": [
+        "./dist/@types/store/index.d.ts"
+      ],
+      "min/store/with-schemas": [
+        "./dist/@types/store/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers": [
+        "./dist/@types/synchronizers/index.d.ts"
+      ],
+      "min/synchronizers/with-schemas": [
+        "./dist/@types/synchronizers/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-broadcast-channel": [
+        "./dist/@types/synchronizers/synchronizer-broadcast-channel/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-broadcast-channel/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-broadcast-channel/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-local": [
+        "./dist/@types/synchronizers/synchronizer-local/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-local/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-local/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-client": [
+        "./dist/@types/synchronizers/synchronizer-ws-client/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-client/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-client/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-durable-object": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-durable-object/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-durable-object/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-simple": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-simple/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server-simple/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server-simple/with-schemas/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server": [
+        "./dist/@types/synchronizers/synchronizer-ws-server/index.d.ts"
+      ],
+      "min/synchronizers/synchronizer-ws-server/with-schemas": [
+        "./dist/@types/synchronizers/synchronizer-ws-server/with-schemas/index.d.ts"
+      ],
+      "min/ui-react-dom": [
+        "./dist/@types/ui-react-dom/index.d.ts"
+      ],
+      "min/ui-react-dom/with-schemas": [
+        "./dist/@types/ui-react-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-react-inspector": [
+        "./dist/@types/ui-react-inspector/index.d.ts"
+      ],
+      "min/ui-react-inspector/with-schemas": [
+        "./dist/@types/ui-react-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-react": [
+        "./dist/@types/ui-react/index.d.ts"
+      ],
+      "min/ui-react/with-schemas": [
+        "./dist/@types/ui-react/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid-dom": [
+        "./dist/@types/ui-solid-dom/index.d.ts"
+      ],
+      "min/ui-solid-dom/with-schemas": [
+        "./dist/@types/ui-solid-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid-inspector": [
+        "./dist/@types/ui-solid-inspector/index.d.ts"
+      ],
+      "min/ui-solid-inspector/with-schemas": [
+        "./dist/@types/ui-solid-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-solid": [
+        "./dist/@types/ui-solid/index.d.ts"
+      ],
+      "min/ui-solid/with-schemas": [
+        "./dist/@types/ui-solid/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte-dom": [
+        "./dist/@types/ui-svelte-dom/index.d.ts"
+      ],
+      "min/ui-svelte-dom/with-schemas": [
+        "./dist/@types/ui-svelte-dom/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte-inspector": [
+        "./dist/@types/ui-svelte-inspector/index.d.ts"
+      ],
+      "min/ui-svelte-inspector/with-schemas": [
+        "./dist/@types/ui-svelte-inspector/with-schemas/index.d.ts"
+      ],
+      "min/ui-svelte": [
+        "./dist/@types/ui-svelte/index.d.ts"
+      ],
+      "min/ui-svelte/with-schemas": [
+        "./dist/@types/ui-svelte/with-schemas/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
